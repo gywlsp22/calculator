@@ -29,7 +29,8 @@
       <input type="button" class="operater" value="-" onclick="document.forms[0].output.value+='-'">
       <input type="button" class="dot" value="." onclick="document.forms[0].output.value+='.'">
       <input type="button" value="0" onclick="document.forms[0].output.value+='0'">
-      <input type="button" class="operater result" value="=">
+      <input type="button" class="operater result" value="="
+        onclick="document.forms[0].output.value =eval(document.forms[0].output.value)">
     </form>
 
     <script src="main.js"></script>
